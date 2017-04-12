@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+     <meta name="description" content="Interaktywny poradnik szybkiego startu dla Brackets.">
+        <link rel="stylesheet" href="portfolio.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Poiret+One" rel="stylesheet">
+        
+        <script type="text/javascript">
+            
+            function odliczanie()
+            {
+                var data = new Date();
+                
+                var godzina = data.getHours();
+                if(godzina <10)
+                    {
+                        godzina="0"+godzina;
+                    }
+                var minuta = data.getMinutes();
+                if(minuta <10)
+                    {
+                        minuta="0"+minuta;
+                    }
+                var sekunda = data.getSeconds();
+                if(sekunda <10)
+                    {
+                        sekunda="0"+sekunda;
+                    }
+                
+                document.getElementById("zegar").innerHTML = godzina+":"+minuta+":"+sekunda;
+                
+                setTimeout("odliczanie()",1000);
+                
+            }
+    
+        
+        </script>
+        
+</head>
+<body onload="odliczanie();">
+   <div id="logo">
+       <div id="imie">
+        <h1>Jakub Białek</h1>
+       </div>
+       <div id="zegar">
+       </div>
+       <div style="clear:both;"></div>
+    </div>
+    <div id="container">
+    <div id = "content">
+    <h3>Co oferuję</h3>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pellentesque purus, a bibendum felis. Nulla eget consequat libero. Duis vitae elementum lectus. Mauris neque leo, finibus in ipsum vitae, facilisis lacinia dolor. Praesent vulputate hendrerit erat. Morbi dignissim, arcu non malesuada pellentesque, diam mi maximus quam, non molestie nisl enim sit amet tellus. Donec ut leo ut nulla auctor dictum a a tortor. Donec consequat metus nec leo placerat, vel vulputate mi malesuada. Nulla at molestie nisi. Nam varius eleifend enim, sit amet venenatis dolor.
+
+Mauris finibus ex a mi faucibus, sed ornare lectus tincidunt. Nam consequat nisi at laoreet pharetra. Sed venenatis lorem eros, ut sollicitudin massa maximus a. Curabitur non ornare quam. Phasellus ornare in mauris vel tincidunt. Nunc fermentum est ornare sapien consectetur pretium. Maecenas accumsan vel orci non hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum in vestibulum est. Phasellus magna orci, dictum at rutrum eu, accumsan ac arcu. Nam et libero ac velit posuere porttitor. Donec et dictum mauris. Donec mi libero, bibendum vitae suscipit ac, accumsan sed urna.
+
+
+  
+    </div>
+        <div id="Powrot"><a href="portfolio.html" class="link"><h3>Powrót do strony głównej</h3></a></div>
+    </div>
+    
+    <div id = "footer">Jakub Białek - portfolio. Wszystkie prawa zastrzeżone &copy;.</div>
+    
+
+</body>
+</html>
